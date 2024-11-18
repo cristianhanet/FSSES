@@ -380,9 +380,9 @@ h2{
 .container_cards_contact{
 	margin-top: 200px;
 	margin-left: 30px;
-	display: grid;
+	display: inline-grid;
 	align-items: center;
-	grid-template-columns: repeat(100px, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit);
 	grid-template-rows: 3;
 	gap: 10px;
 	grid-template-areas:
@@ -510,6 +510,13 @@ h2{
 		transform: translateY(30px);
 		transition: 0.5s all;
 	}
+	.card6 img{
+		/* width: 10%;
+		height: 10%; */
+		position:inherit;
+		top: 100;
+		left: 10;
+	}
 	.card6:hover .info{
 		opacity: 1;
 		transform: translateY(0px);
@@ -606,7 +613,7 @@ h2{
 		opacity: 1;
 	}
 	.card8 .info{
-		position:inherit;
+		position: relative;
 		top: 0px;
 		z-index: 3;
 		color:hsl(0, 100%, 100%);
